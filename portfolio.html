@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Ponmudi's Portfolio</title>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+        
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                margin: 2px;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .nav {
+                list-style: none;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                text-align: center;
+                margin-bottom: 20px;
+                background-color: #0c2845; 
+                color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.45);
+            }
+            header img {
+                height:100px; width:100px; border-radius: 50%;
+            }
+            .logo{
+                display: inline-block;
+            }
+            nav {
+                background-color: rgba(85, 86, 88, 0.524);
+                padding: 10px 0;
+            }
+            .nav li {
+                text-decoration: none;
+                display: inline;
+                margin-right: 50px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: color 0.3s ease-in-out;
+                list-style-type: none;
+            }
+
+            .nav li:hover a {
+                color: #ff7f50;
+            }
+
+            .pg1 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 50px;
+            }
+            .pg1 p {
+                max-width: 60%;
+                font-size: 20px;
+                line-height: 1.6;
+            }
+            .pg1 img {
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            .social-icons {
+                display: flex;
+                justify-content: center;
+            }
+            svg {
+                width: 30px;
+                height: 30px;
+                fill: rgb(0, 0, 0);
+                margin: 0 10px;
+                transition: fill 0.3s ease-in-out;
+            }
+            svg:hover {
+                fill: aqua;
+            }
+            #clg {
+                position: relative;
+                text-align: center;
+                padding: 50px;
+            }
+            #clg::after {
+                content: '';
+                background: url('ssce.jpg') center/cover;
+                opacity: 0.5;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
+            nav a{
+                font-style: normal;
+                color: darkturquoise;
+            }
+            a{
+                text-decoration: none;
+            }
+            #skills {
+                padding: 50px;
+                text-align: center;
+            }
+            .skill {
+                display: flex;
+                align-items: flex-end; 
+                margin-bottom: 30px;
+            }
+            .skill img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
+            .skill-name {
+                flex-grow: 1; 
+                text-align: center;
+            }
+            .progress-bar {
+                display: flex;
+                align-items: center; 
+                width: 900px;
+                height: 20px;
+                background-color: #eee;
+                border-radius: 10px;
+                margin-top: 10px;
+                overflow: hidden;
+                padding-right: 5%;
+            }
+            .progress {
+                height: 100%;
+                background-color: #4caf50;
+                border-radius: 10px;
+                transition: width 0.3s ease-in-out;
+                position: relative;
+            }
+            .progress::after {
+                content: attr(data-progress) '%'; 
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+            }
+            .skill img{
+                padding-left: 10%;
+            }
+            .references {
+                margin-top: 30px;
+                font-style: italic;
+                color: #777;
+            }
+            li::before {
+                content: "\2022"; 
+                color: #004080; 
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+            h2 {
+                color: #004080; 
+            }
+
+            section {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+            footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            background-color: #0040805b;
+            color: #fff;
+            padding: 2px;
+            margin-top: 0px;
+            border-radius: 5px;
+            box-shadow: 0 5px 9px rgba(55, 55, 55, 0.748);
+            }
+            .contact{
+                display: flex;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo.jpg" alt="">
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="#abt-me">about me</a></li>
+                            <li><a href="#clg">my collage</a></li>                    
+                            <li><a href="#hbi">hobbies</a></li>
+                            <li><a href="#skl">skills</a></li>
+                            <li><a href="#res">Resume</a></li>
+                            <li><a href="#ctc">contact</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </header>
+
+    <h1>Hi all, I'm Ponmudi  &#x1F44B;</h1>
+    
+    <div id="abt-me" class="pg1">
+        <p>I'm the HTML beginner, sculpting digital worlds with the magic of HTML. With each tag and element, I bring ideas to life, crafting visually captivating websites. My dedication to HTML is my superpower, turning code into immersive user experiences. In the vast expanse of the web, I stand as the architect.</p>
+        <img src="intro.avif" alt="simple picture" height="400px" width="400px">
+    </div>
+
+           <div class="social-icons">
+            <a href="https://www.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c(3.97,0,7.19,2.73,7.19,8.26)V39z"></path>
+            </svg></a>
+            <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                <path d="M20.5,46c-1.378,0-2.5-1.121-2.5-2.5V26l-4.45,0.003c-1.367,0-2.489-1.11-2.501-2.476l-0.029-3.003 c-0.006-0.673,0.25-1.306,0.724-1.783C12.216,18.263,12.847,18,13.52,18H18v-4.5c0-6.746,3.442-10.462,9.691-10.462 c2.472,0,4.63,0.175,4.65,0.177c0.965,0.086,1.691,0.88,1.691,1.847v4.57c0,1.022-0.832,1.854-1.854,1.854h-2.908 c-1.217,0-2.208,0.99-2.208,2.208L27.006,18h4.438c0.713,0,1.393,0.306,1.867,0.838s0.699,1.243,0.616,1.951l-0.349,3 C33.432,25.05,32.364,26,31.096,26H27v17.5c0,1.379-1.122,2.5-2.5,2.5H20.5z"></path>
+            </svg></a>
+            <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path d="M 8 3 C 5.2 3 3 5.2 3 8 L 3 16 C 3 18.8 5.2 21 8 21 L 16 21 C 18.8 21 21 18.8 21 16 L 21 8 C 21 5.2 18.8 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.7 5 19 6.3 19 8 L 19 16 C 19 17.7 17.7 19 16 19 L 8 19 C 6.3 19 5 17.7 5 16 L 5 8 C 5 6.3 6.3 5 8 5 z M 17 6 C 16.4 6 16 6.4 16 7 C 16 7.6 16.4 8 17 8 C 17.6 8 18 7.6 18 7 C 18 6.4 17.6 6 17 6 z M 12 7 C 9.2 7 7 9.2 7 12 C 7 14.8 9.2 17 12 17 C 14.8 17 17 14.8 17 12 C 17 9.2 14.8 7 12 7 z M 12 9 C 13.7 9 15 10.3 15 12 C 15 13.7 13.7 15 12 15 C 10.3 15 9 13.7 9 12 C 9 10.3 10.3 9 12 9 z"></path>
+            </svg></a>
+            <a href="mailto:your.email@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                <path d="M47 34.837V52h7.533C56.448 52 58 50.448 58 48.533V29.486L47 34.837zM47 32l11-7.333v-5.426c0-1.914-.812-3.781-2.325-4.953-2.336-1.809-5.515-1.673-7.665.151L47 15.232V32zM19.814 33.822L32 41 44.349 33.726 43.443 18.023 32 27 20.718 18.149zM17.153 32.102v-16.75L15.99 14.44c-2.15-1.823-5.329-1.961-7.664-.151C6.812 15.46 6 17.328 6 19.243v5.424L17.153 32.102zM6 29.486v19.047C6 50.448 7.552 52 9.467 52H17V34.837L6 29.486z"></path>
+            </svg></a>
+        </div>
+
+        <br><br><br><br><br>
+
+        <h1>MY COLLAGE  &#127979;  </h1>
+
+        <div id="clg"> 
+            <p>I study at <a href="http://sairamce.edu.in/"><h5>SRI SAIRAM COLLEGE OF ENGINEERING</h5></a></p>
+            <p> <i>Sri Sairam College of Engineering (Anaikal) </i> stands as a beacon of innovation and excellence in the realm of education. Nestled in the serene surroundings of Anaikal, this institution is not just a collage of bricks and mortar but a crucible of dreams, aspirations, and transformative learning experiences.
+                Picture a campus where tradition meets modernity, where the vibrant energy of youth converges with the wisdom of seasoned educators. </p>
+            <p>As you step onto the sprawling grounds, the architecture itself seems to whisper tales of intellectual curiosity and academic brilliance. Majestic buildings stand tall, adorned with a seamless blend of contemporary design and timeless aesthetics, creating an ambiance that inspires awe.
+                 Beyond the physical grandeur, what truly sets Sri Sairam apart is its commitment to nurturing holistic development.</p>
+            <p> Here, education is not confined to the classrooms; it is an immersive journey that encompasses intellectual exploration, character building, and the honing of practical skills. The air is charged with the spirit of innovation, encouraging students to think beyond boundaries and embrace creativity.
+                The faculty, a stellar assembly of mentors and experts, are the architects of this intellectual haven. Their passion for teaching and unwavering dedication to the success of every student elevate the learning experience to extraordinary heights. It's not just education; it's a collaborative partnership where students are mentored to become not just engineers but visionaries, problem solvers, and leaders.</p>
+            <p> <i>Sri Sairam College of Engineering </i> is not merely an academic institution; it's a vibrant community where diversity is celebrated, ideas are exchanged, and friendships are forged for a lifetime. The campus buzzes with a kaleidoscope of cultural events, technical fests, and sporting extravaganzas, creating an atmosphere that is as dynamic as it is enriching.
+                So, when others hear the name "Sri Sairam College of Engineering ," it's not just a recognition of an institution; it's an acknowledgment of a transformative experience. A collective "wow" that echoes the sentiment that something truly exceptional is happening within those hallowed walls <u><i>a place where dreams take flight and potential finds its purpose</i></u></p>
+        </div>
+
+        <div id="hbi">
+            <h3 style="text-align: center; color:rgb(15, 88, 37);">I Do Pencil Carving As One Of My Favourite Hobby &#x1F60D; </h3>
+            <p>On my leasure time like the sem leaves and saturday sunday i do pencil carving which makes me happy, time passing and as well as money making for my savings </p>
+            <p>Frst i was using the nrmalpencils for carving and then when i pick upmy  skills in this feildi changed to <a href="https://www.staedtler.com/intl/en/products/pencils-and-accessories/graphite-pencils/">staedtler pencils</a> which is used by many of the artistist </p>
+            <p>I started this with 'sharpner blade' and normal pencil and my first art was about just  &#8377;15. <br>then after that now i pack that neet in a glass bottle with some decoration in it and with the art done in the branded pencil called <i>staedtler</i> on a cute paper bag only for&#8377;250</p>
+            <img src="qr.jpg" alt="" style="padding-top: 5%; padding-right: 25%; padding-left: 25%;" width="300px" height="300px"><figcaption style="text-align: center;">scan this to see what i have done till now!!! </figcaption>
+            <p>Do follow <a href="https://instagram.com/pencil_._carving?igshid=MzMyNGUyNmU2YQ==">pencil_._carving</a> for ur customised gifts topresent for ur lovable ones &#128522;</p>
+        </div>
+
+        <div id="skl">
+            <h2 style="text-align: center;">Skills</h2>
+    
+            <div class="skill">
+                <img src="html.png" alt="HTML Logo">
+                <div class="skill-name">HTML</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;" data-progress="95"></div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <img src="css.png" alt="CSS Logo">
+                <div class="skill-name">CSS</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;" data-progress="90"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="aurdino.png" alt="aurdino Logo">
+                <div class="skill-name">aurdino</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;" data-progress="60"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="raspberry pi.png" alt="raspberry pi Logo">
+                <div class="skill-name">raspberry pi</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;" data-progress="60"></div>
+                </div>
+            </div>       
+            
+            <div class="skill">
+                <img src="javascript.png" alt="javascript Logo">
+                <div class="skill-name">javascript</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;" data-progress="80"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <img src="python.png" alt="python Logo">
+                <div class="skill-name">python</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;" data-progress="70"></div>
+                </div>
+            </div>
+        </div>
+
+        <header id="res">
+            <h1 >Resume</h1>
+            <p>Web Developer | Engineering Student</p>
+            <p>
+                Phone: <span style="color: #00ffd5;">6381263884</span> | Email: <a href="mailto:mersalponmudii@gmail.com" style="color: #fff;">mersalponmudii@gmail.com</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ponmudi-e-9462b5289" target="_blank" style="color: #fff;">LinkedIn Profile</a>
+            </p>
+        </header>
+    
+        <section>
+            <h2>Resume Summary/Objective</h2>
+            <p>
+                Enthusiastic and detail-oriented engineering student with a passion for web development. Possesses a solid foundation in HTML and Python, complemented by strong speaking and leadership skills. Eager to apply theoretical knowledge gained at Sri Sairam College of Engineering to real-world projects. Currently engaged in an internship at Codesoft, contributing to ongoing development initiatives. Seeking opportunities to leverage technical and interpersonal skills in a dynamic professional environment.
+            </p>
+        </section>
+    
+        <section>
+            <h2>Education</h2>
+            <p>Sri Sairam College of Engineering, Bengaluru</p>
+        </section>
+    
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li style="color: #004080;">Web Developer</li>
+                <li style="color: #004080;">Speaking Skills</li>
+                <li style="color: #004080;">Typewriting</li>
+                <li style="color: #004080;">Leadership</li>
+                <li style="color: #004080;">Volunteer</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Certificates</h2>
+            <ul>
+                <li style="color: #004080;">HTML Beginner Certificate</li>
+                <li style="color: #004080;">Python Beginner Certificate</li>
+                
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Achievements</h2>
+            <p>
+                - Completed 7 webpages in HTML<br>
+                - Ongoing internship in Codesoft<br>
+                - Completed 1 year in B.E., E.C.E<br>
+                - 1 year IEEE member<br>
+            </p>
+        </section>
+    
+        <section>
+            <h2>Professional Memberships</h2>
+            <p>
+                - Active IEEE member for 1 year<br>
+                - Treasury in IEEE<br>
+            </p>
+        </section>
+    
+        <section>
+            <h2>Publications & Presentations</h2>
+            <p>
+                - Paper presentation and publication on the topic "Solar Fabric"<br>
+                - Project presentation on UVC College on the topic "Medical Assisted Droid (MAD)"<br>
+            </p>
+        </section>
+    
+        <section>
+            <h2>Languages</h2>
+            <p>Tamil, English</p>
+        </section>
+    
+        <section>
+            <h2>Hobbies</h2>
+            <p>
+                - Learning new things<br>
+                - Pencil carving<br>
+                - Chalk carving<br>
+                - Craft making<br>
+                - Course learning<br>
+            </p>
+        </section>
+    
+        <section class="references">
+            <p>References available upon request.</p>
+        </section><hr>
+
+        <section id="ctc" style="background-color: #0004ff4f;">
+            <h1 style="color: #0b0526; background-color: #1fa0eb29;">Contact Information</h1><hr style="color: #4caf50;">
+            <div class="contact">
+            <p>
+                Address: 123/45,xyz nagar,hosur,635109<br>
+                Phone: +916382263884<br>
+                Email: <a href="mailto:mersalponmudii@gmail.com">mersalponmudii@gmail.com</a>
+            </p></div>
+            <div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c(3.97,0,7.19,2.73,7.19,8.26)V39z"></path>
+                    </svg></a>
+                    <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path d="M20.5,46c-1.378,0-2.5-1.121-2.5-2.5V26l-4.45,0.003c-1.367,0-2.489-1.11-2.501-2.476l-0.029-3.003 c-0.006-0.673,0.25-1.306,0.724-1.783C12.216,18.263,12.847,18,13.52,18H18v-4.5c0-6.746,3.442-10.462,9.691-10.462 c2.472,0,4.63,0.175,4.65,0.177c0.965,0.086,1.691,0.88,1.691,1.847v4.57c0,1.022-0.832,1.854-1.854,1.854h-2.908 c-1.217,0-2.208,0.99-2.208,2.208L27.006,18h4.438c0.713,0,1.393,0.306,1.867,0.838s0.699,1.243,0.616,1.951l-0.349,3 C33.432,25.05,32.364,26,31.096,26H27v17.5c0,1.379-1.122,2.5-2.5,2.5H20.5z"></path>
+                    </svg></a>
+                    <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                        <path d="M 8 3 C 5.2 3 3 5.2 3 8 L 3 16 C 3 18.8 5.2 21 8 21 L 16 21 C 18.8 21 21 18.8 21 16 L 21 8 C 21 5.2 18.8 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.7 5 19 6.3 19 8 L 19 16 C 19 17.7 17.7 19 16 19 L 8 19 C 6.3 19 5 17.7 5 16 L 5 8 C 5 6.3 6.3 5 8 5 z M 17 6 C 16.4 6 16 6.4 16 7 C 16 7.6 16.4 8 17 8 C 17.6 8 18 7.6 18 7 C 18 6.4 17.6 6 17 6 z M 12 7 C 9.2 7 7 9.2 7 12 C 7 14.8 9.2 17 12 17 C 14.8 17 17 14.8 17 12 C 17 9.2 14.8 7 12 7 z M 12 9 C 13.7 9 15 10.3 15 12 C 15 13.7 13.7 15 12 15 C 10.3 15 9 13.7 9 12 C 9 10.3 10.3 9 12 9 z"></path>
+                    </svg></a>
+                    <a href="mailto:your.email@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                        <path d="M47 34.837V52h7.533C56.448 52 58 50.448 58 48.533V29.486L47 34.837zM47 32l11-7.333v-5.426c0-1.914-.812-3.781-2.325-4.953-2.336-1.809-5.515-1.673-7.665.151L47 15.232V32zM19.814 33.822L32 41 44.349 33.726 43.443 18.023 32 27 20.718 18.149zM17.153 32.102v-16.75L15.99 14.44c-2.15-1.823-5.329-1.961-7.664-.151C6.812 15.46 6 17.328 6 19.243v5.424L17.153 32.102zM6 29.486v19.047C6 50.448 7.552 52 9.467 52H17V34.837L6 29.486z"></path>
+                    </svg></a>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br>
+
+        <footer>
+            <p>&copy; 2023 Ponmudi. All Rights Reserved.</p>
+        </footer>
+
+    </body>
+
+</html>
